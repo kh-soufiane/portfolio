@@ -1,0 +1,51 @@
+:root {
+  --main-background: #022c43;
+  --heading-1: #ffd700;
+  --heading-2: #8d8d8d;
+  --card-text: #022c43;
+  --paragraph-color: #fff;
+  --paragraph-error-color: #ff1744;
+  --color-hover-button: #333;
+  --input-background: #115173;
+  --map-background: rgba(8, 253, 216, 0.1);
+  --card-shadow: rgba(141, 141, 141);
+  --navbar-background: #181818;
+  --navbar-link: #4d4d4e;
+  --color-button: #ffd700;
+}
+
+[theme='light'] {
+  --main-background: #fafafa;
+  --heading-1: #ffd700;
+  --heading-2: #8d8d8d;
+  --card-text: #022c43;
+  --paragraph-color: #000;
+  --paragraph-error-color: #ff1744;
+  --color-hover-button: #333;
+  --input-background: #f2f3f7;
+  --map-background: rgba(8, 253, 216, 0.1);
+  --card-shadow: rgba(141, 141, 141);
+  --navbar-background: #f2f3f7;
+  --navbar-link: #4d4d4e;
+  --color-button: #ffd700;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  color: #444;
+  background: var(--main-background);
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dashboard {
+  margin-top: 200px;
+  margin-left: 200px;
+}
