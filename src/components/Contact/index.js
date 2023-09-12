@@ -8,6 +8,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const refForm = useRef()
+  const position = [46.8316934,-71.2289382]
 
   useEffect(() => {
     setTimeout(() => {
@@ -87,16 +88,16 @@ const Contact = () => {
         <div className="info-map">
           Soufiane Khadri,
           <br />
-          Canada,
+          Avenue Conway, Québec
           <br />
-          1533 Avenue Conway <br />
-          Québec <br />
+          Qc, Canada <br />
+          (+1)418-271-2355 <br />
           <span>khadri.soufiane@outlook.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[46.8314776, -71.2292661]} zoom={13}>
+          <MapContainer center={position} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[46.8314776, -71.2292661]}>
+            <Marker position={position}>
               <Popup>Here is where i convert coffe to code :)</Popup>
             </Marker>
           </MapContainer>

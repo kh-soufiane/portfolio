@@ -88,7 +88,7 @@
     p {
       font-style: 18px;
       color: var(--paragraph-color);
-      font-family: sans-serif;
+      font-family: 'Quicksand';
       font-weight: 300;
       min-width: fit-content;
       animation: pulse 1s;
@@ -104,6 +104,29 @@
       &:nth-of-type(3) {
         animation-delay: 1.3s;
       }
+    }
+  }
+
+  .flat-button {
+    color: var(--color-button);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: 'Quicksand-semi-bold';
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid var(--border-button);
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+    background: var(--background-button);
+
+    &:hover {
+      background: var(--background-button-hover);
+      color: var(--color-hover-button);
+      border: 1px solid var(--heading-1);
+      cursor: pointer;
     }
   }
 

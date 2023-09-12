@@ -3,7 +3,6 @@ import './index.scss'
 
 const Logo = () => {
   return (
-    <div className="all-cards">
       <div className="card-container">
         <div className="card">
           <div className="card-title">Software Developer</div>
@@ -19,8 +18,6 @@ const Logo = () => {
             Bootstrap, CSS, ReactJS
           </div>
         </div>
-      </div>
-      <div className="card-container-second">
         <div className="card">
           <div className="card-title">CI- CD</div>
           <div className="card-description">
@@ -36,7 +33,6 @@ const Logo = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 

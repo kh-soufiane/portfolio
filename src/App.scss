@@ -17,6 +17,26 @@ $primary-color: #ffd700;
   font-family: 'Coolvetica';
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
+@font-face {
+  font-family: Quicksand-light;
+  src: url(./assets/fonts/Quicksand-Light.ttf);
+}
+@font-face {
+  font-family: Quicksand-bold;
+  src: url(./assets/fonts/Quicksand-Bold.ttf);
+}
+@font-face {
+  font-family: Quicksand-medium;
+  src: url(./assets/fonts/Quicksand-Medium.ttf);
+}
+@font-face {
+  font-family: Quicksand-regular;
+  src: url(./assets/fonts/Quicksand-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand-semi-bold;
+  src: url(./assets/fonts/Quicksand-SemiBold.ttf);
+}SemiBold
 
 input,
 textarea {

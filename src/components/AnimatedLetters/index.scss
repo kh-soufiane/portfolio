@@ -13,7 +13,7 @@
 
   &:hover {
     animation: rubberBand 1s;
-    color: var(--heading-1);
+    color: var(--heading-1-hover) !important;
   }
 }
 

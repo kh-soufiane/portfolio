@@ -1,33 +1,59 @@
 :root {
   --main-background: #022c43;
+  /*Titles*/
   --heading-1: #ffd700;
+  --heading-1-hover: #fff;
   --heading-2: #8d8d8d;
+  /*Card*/
   --card-text: #022c43;
+  --card-shadow: rgba(141, 141, 141);
+  /*Paragraph*/
   --paragraph-color: #fff;
   --paragraph-error-color: #ff1744;
+  /*Buttons*/
+  --color-button: #ffd700;
   --color-hover-button: #333;
-  --input-background: #115173;
-  --map-background: rgba(8, 253, 216, 0.1);
-  --card-shadow: rgba(141, 141, 141);
+  --background-button: #022c43;
+  --background-button-hover:  #ffd700;
+  --border-button: #ffd700;
+  --border-button-hover: #022c43;
+  /*Navbar*/
   --navbar-background: #181818;
   --navbar-link: #4d4d4e;
-  --color-button: #ffd700;
+  /*Input*/
+  --input-background: #115173;
+  /*Map*/
+  --map-background: rgba(8, 253, 216, 0.1);
+  --project-card-color:#fff;
 }
 
 [theme='light'] {
-  --main-background: #fafafa;
-  --heading-1: #ffd700;
+  --main-background: #E8EAF6
+  ;
+  /*Titles*/
+  --heading-1: #022c43;
+  --heading-1-hover: #ffd700;
   --heading-2: #8d8d8d;
-  --card-text: #022c43;
+  /*Card*/
+  --card-text: #fafafa;
+  --card-shadow: rgba(141, 141, 141);
+  /*Paragraph*/
   --paragraph-color: #000;
   --paragraph-error-color: #ff1744;
+  /*Buttons*/
+  --color-button: #333;
   --color-hover-button: #333;
-  --input-background: #f2f3f7;
-  --map-background: rgba(8, 253, 216, 0.1);
-  --card-shadow: rgba(141, 141, 141);
+  --background-button: #E8EAF6;
+  --background-button-hover:  #ffd700;
+  --border-button: #ffd700;
+  /*Navbar*/
   --navbar-background: #f2f3f7;
   --navbar-link: #4d4d4e;
-  --color-button: #ffd700;
+  /*Input*/
+  --input-background: #f2f3f7;
+  /*Map*/
+  --map-background: #C5CAE9;
+  --project-card-color:#fff;
 }
 
 html {
