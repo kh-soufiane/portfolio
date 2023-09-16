@@ -1,6 +1,18 @@
 .dark_mode {
-  margin-top: -13px;
-  margin-left: 50%;
+  margin-top: 5px;
+  margin-left: 98%;
+  position: fixed;
+  z-index: 100;
+  font-size: 25px;
+  cursor: pointer;
+
+  .moon {
+    color: var(--moon-background);
+  }
+
+  .sun {
+    color: var(--moon-background);
+  }
 }
 
 .dark_mode_label {

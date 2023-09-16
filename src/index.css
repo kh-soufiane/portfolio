@@ -22,9 +22,16 @@
   --navbar-link: #4d4d4e;
   /*Input*/
   --input-background: #115173;
+  /*TimeLine*/
+  --icon-background: #ffd700;
+  --icon-color: #022c43;
+  --date-color: #E8EAF6;
+  --arrow-color:  #E8EAF6;
   /*Map*/
   --map-background: rgba(8, 253, 216, 0.1);
   --project-card-color:#fff;
+  --project-btn-background: transparent;
+  --moon-background: #E8EAF6;
 }
 
 [theme='light'] {
@@ -45,15 +52,23 @@
   --color-hover-button: #333;
   --background-button: #E8EAF6;
   --background-button-hover:  #ffd700;
-  --border-button: #ffd700;
+  --border-button: #022c43;
+  --border-button-hover: #ffd700;
   /*Navbar*/
   --navbar-background: #f2f3f7;
   --navbar-link: #4d4d4e;
   /*Input*/
   --input-background: #f2f3f7;
+  /*TimeLine*/
+  --icon-background: #022c43;
+  --icon-color: #fff;
+  --date-color: #022c43;
+  --arrow-color: #022c43;
   /*Map*/
   --map-background: #C5CAE9;
   --project-card-color:#fff;
+  --project-btn-background: #E8EAF6;
+  --moon-background: #022c43;
 }
 
 html {
@@ -65,7 +80,7 @@ body {
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #444;
   background: var(--main-background);
-  overflow: hidden;
+  overflow: auto;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -77,7 +77,7 @@
 
     &:hover {
       color: var(--paragraph-color);
-      background: var(--heading-1);
+      background: var(--project-btn-background);
     }
   }
 }
@@ -161,7 +161,7 @@
       border-radius: 4px;
       font-size: 14px;
       color: var(--color-button);
-      background: var(--background-button);
+      background: var(--project-btn-background);
       text-transform: uppercase;
       font-weight: 700;
       transition: all 0.3 cubic-bezier(0.645, 0.045, 0.355, 1);

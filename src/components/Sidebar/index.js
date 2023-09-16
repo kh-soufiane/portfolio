@@ -1,18 +1,19 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import logoS from '../../assets/images/logo-me.jpg'
-import logoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faHome,
   faEnvelope,
   faUser,
   faDashboard,
+  faAtom,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
   faGithub,
   faSkype,
+  faDiscord,
 } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
@@ -51,20 +52,34 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faDashboard} color="#4d4d4e" />
         </NavLink>
+
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="experience-link"
+          to="/experience"
+        >
+          <FontAwesomeIcon icon={faAtom} color="#4d4d4e" />
+        </NavLink>
       </nav>
       <ul>
         <li>
-          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com">
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/soufiane-khadri/">
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
         </li>
         <li>
-          <a target="_blank" rel="noreferrer" href="https://www.github.com">
+          <a target="_blank" rel="noreferrer" href="https://github.com/kh-soufiane">
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
           </a>
         </li>
         <li>
-          <a target="_blank" rel="noreferrer" href="skype:live:soufianekhadri">
+          <a target="_blank" rel="noreferrer" href="discordapp.com/users/soufianekhadri">
+            <FontAwesomeIcon icon={faDiscord} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferrer" href="skype:live:.cid.289e49ff4b4ce8f3">
             <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
           </a>
         </li>

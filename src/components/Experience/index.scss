@@ -1,0 +1,27 @@
+.vertical-timeline-element--work{
+    font-family: 'Quicksand-regular';
+
+    .vertical-timeline-element-date{
+        color: var(--date-color);
+        font-weight: 500 !important;
+    }
+
+    img {
+        margin-top: 10px;
+        width: 20%;
+    }
+
+    a{
+        text-decoration: none;
+        color: #444;
+    }
+
+    h4 {
+        margin-top: 10px;
+    }
+    
+}
+
+.timeline-container {
+    height: 100%;
+}

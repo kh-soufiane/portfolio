@@ -1,36 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ReactComponent as Sun } from '../../assets/images/Sun.svg'
 import { ReactComponent as Moon } from '../../assets/images/Moon.svg'
 import './index.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faMoon,
+  faSun,
+} from '@fortawesome/free-solid-svg-icons'
 
 const Theme = () => {
-  const setDarkMode = () => {
-    document.querySelector('body').setAttribute('theme', 'dark')
+  const [theme, setTheme] = useState('dark')
+
+  const setThemeColor = () => {
+    document.querySelector('body').setAttribute('theme', theme)
   }
 
-  const setLightMode = () => {
-    document.querySelector('body').setAttribute('theme', 'light')
-  }
-
-  setLightMode()
+  setThemeColor()
 
   const toggleTheme = (e) => {
-    if (e.target.checked) setDarkMode()
-    else setLightMode()
+    if(theme === 'dark') setTheme('light');
+    else setTheme('dark');
+
+    setThemeColor();
   }
 
   return (
-    <div className="dark_mode">
-      <input
-        className="dark_mode_input"
-        type="checkbox"
-        id="darkmode-toggle"
-        onChange={toggleTheme}
-      />
-      <label className="dark_mode_label" htmlFor="darkmode-toggle">
-        <Sun />
-        <Moon />
-      </label>
+    <div className="dark_mode" onClick={toggleTheme}>
+      {theme === 'light' ? <FontAwesomeIcon icon={faMoon} color='#022c43' /> : <FontAwesomeIcon icon={faSun} color='#E8EAF6' />}
     </div>
   )
 }

@@ -1,11 +1,12 @@
 .nav-bar {
   background: var(--navbar-background);
-  width: 200px;
+  width: 100px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 3;
   min-height: 500px;
+  overflow: hidden;
 
   .logo {
     display: block;
@@ -14,7 +15,7 @@
     img {
       display: block;
       margin: 8px auto;
-      width: 150px;
+      width: 92px;
       height: auto;
       border-radius: 50%;
     }
@@ -23,10 +24,11 @@
   .subtitle-logo-first {
     color: var(--heading-2) !important;
     margin-top: 10px;
-    margin-left: 25%;
+    margin-left: 3%;
+    text-align: center;
     font-weight: 400;
-    font-size: 15px;
-    font-family: 'Quicksand' !important;
+    font-size: 13px;
+    font-family: 'Quicksand-semi-bold' !important;
     letter-spacing: 3px;
     animation: ease-in 1s 0.8s forwards;
   }
@@ -34,10 +36,11 @@
   .subtitle-logo-second {
     color: var(--heading-2) !important;
     margin-top: 15px;
-    margin-left: 7%;
+    margin-left: 3%;
+    text-align: center;
     font-weight: 400;
-    font-size: 11px;
-    font-family: 'Quicksand' !important;
+    font-size: 10px;
+    font-family: 'Quicksand-regular' !important;
     letter-spacing: 3px;
     animation: ease-in 1s 0.8s backwards;
   }
@@ -110,6 +113,12 @@
     a.project-link {
       &:after {
         content: 'PROJECTS';
+      }
+    }
+
+    a.experience-link {
+      &:after {
+        content: 'EXPERIENCES';
       }
     }
 
